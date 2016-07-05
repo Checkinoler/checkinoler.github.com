@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project name="Javascript compress project" basedir="C:\Users\Checkinoler\Documents\Cocos\BrickBreaker" default="compile">
+<project name="Javascript compress project" basedir="C:\Users\Checkinoler\Documents\GitHub\brickbreaker" default="compile">
 
     <taskdef name="jscomp" classname="com.google.javascript.jscomp.ant.CompileTask"
              classpath="C:\Users\Checkinoler\Desktop\cocos2d-x-3.11.1\tools\cocos2d-console\plugins\plugin_compile\build_web/bin/compiler-1.7.jar"/>
@@ -7,12 +7,12 @@
     <target name="compile">
         <jscomp compilationLevel="advanced" 
                 warning="quiet"
-                debug="false" 
-                output="C:\Users\Checkinoler\Documents\Cocos\BrickBreaker\publish\html5/game.min.js"
+                debug="true" 
+                output="C:\Users\Checkinoler\Documents\GitHub\brickbreaker\simulator\html5/game.min.js"
                 languagein="ECMASCRIPT5"
                 
                 >
-            <sources dir="C:\Users\Checkinoler\Documents\Cocos\BrickBreaker\frameworks\cocos2d-html5">
+            <sources dir="C:\Users\Checkinoler\Documents\GitHub\brickbreaker\frameworks\cocos2d-html5">
                 <file name="CCBoot.js"/>
                 <file name="cocos2d/core/event-manager/CCEventHelper.js"/>
                 <file name="CCDebugger.js"/>
@@ -110,7 +110,8 @@
             </sources>
             <sources dir="${basedir}">
                 <file name="src/resource.js"/>
-                <file name="src/app.js"/>
+                <file name="src/scenes/GameScene.js"/>
+                <file name="src/scenes/StartScene.js"/>
                 <file name="main.js"/>
 
             </sources>
