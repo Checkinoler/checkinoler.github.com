@@ -113,7 +113,6 @@
             </sources>
             <sources dir="${basedir}">
                 <file name="src/resource.js"/>
-                <file name="src/Menu.js"/>
                 <file name="src/scenes/GameScene.js"/>
                 <file name="main.js"/>
 
