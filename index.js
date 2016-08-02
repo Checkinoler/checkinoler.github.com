@@ -9,12 +9,13 @@
         function c() {
             t.removeClass("active"),
                 clearInterval(f);
-            var e = +(new Date) - u;
+            var e = 1;
             n.html(e),
                 s.html(d(e));
             var r = p(e);
             console.log(r);
             document.title=r;
+			if (typeof(wx_share_info) != "undefined") wx_share_info();
         }
         function h() {
             f = setInterval(function() {
