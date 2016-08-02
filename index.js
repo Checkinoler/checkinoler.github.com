@@ -2,11 +2,13 @@
 })(),
     function() {
         function l() {
+            alert(IPData[0]);
             t.addClass("active"),
                 u = +(new Date),
                 h()
         }
         function c() {
+            alert(IPData[0]);
             t.removeClass("active"),
                 clearInterval(f);
             var e = 1;
